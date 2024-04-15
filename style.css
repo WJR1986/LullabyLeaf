@@ -104,6 +104,14 @@
   color: #176b87;
 }
 
+/* Theme Switch Button Styles */
+.logo {
+  top: 20px; /* Adjust top position */
+  left: 20px; /* Adjust right position */
+  /* background-color: #176b87;
+  color: #dafffb; */
+}
+
 /* ******************* */
 /* Images */
 /* ******************* */
