@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     // Set the source of the sound icon based on the sound parameter
     const soundIcon = document.getElementById('soundIcon');
-    soundIcon.src = '/img/' + sound + '-light.jpg';
+    soundIcon.src = '../img/' + sound + '-light.jpg';
     
     // Update the heading with the selected sound
     updateHeading(sound);
@@ -274,13 +274,13 @@ function resumeTimer() {
 function getIconPath(sound) {
     switch (sound) {
         case 'ocean':
-            return '/img/ocean-light.jpg';
+            return '../img/ocean-light.jpg';
         case 'fire':
-            return '/img/fire-light.jpg';
+            return '../img/fire-light.jpg';
         case 'tent':
-            return '/img/tent-light.jpg';
+            return '../img/tent-light.jpg';
         default:
-            return '/img/rain-light.jpg';
+            return '../img/rain-light.jpg';
     }
 }
 
