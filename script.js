@@ -274,13 +274,13 @@ function resumeTimer() {
 function getIconPath(sound) {
     switch (sound) {
         case 'ocean':
-            return '/img/ocean-light.jpg';
+            return './ocean-light.jpg';
         case 'fire':
-            return '/img/fire-light.jpg';
+            return './fire-light.jpg';
         case 'tent':
-            return '/img/tent-light.jpg';
+            return './tent-light.jpg';
         default:
-            return '/img/rain-light.jpg';
+            return './rain-light.jpg';
     }
 }
 
