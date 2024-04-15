@@ -1,0 +1,61 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaxing Sounds</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="dark-mode">
+    <div class="container">
+        <h1 class="text-center mt-5">Select a Relaxing Sound</h1>
+        <!-- Theme switch button -->
+        <button id="themeSwitchBtn" class="btn btn-light position-fixed theme-switch-btn">
+            <i class="fas fa-moon"></i> Switch Theme
+        </button>
+        <div class="row justify-content-center mt-4">
+            <div class="col-6 col-sm-3 text-center">
+                <a href="app.html?sound=rain">
+                    <img src="/img/rain-light.jpg" class="img-fluid rounded-circle" alt="Rain">
+                </a>
+                <p>Rain</p>
+            </div>
+            <div class="col-6 col-sm-3 text-center">
+                <a href="app.html?sound=ocean">
+                    <img src="/img/ocean-light.jpg" class="img-fluid rounded-circle" alt="Ocean">
+                </a>
+                <p>Ocean</p>
+            </div>
+            <div class="col-6 col-sm-3 text-center">
+                <a href="app.html?sound=tent">
+                    <img src="/img/tent-light.jpg" class="img-fluid rounded-circle" alt="Tent">
+                </a>
+                <p>Tent</p>
+            </div>
+            <div class="col-6 col-sm-3 text-center">
+                <a href="app.html?sound=fire">
+                    <img src="/img/fire-light.jpg" class="img-fluid rounded-circle" alt="Fire">
+                </a>
+                <p>Fire</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="darkmode.js"></script>
+</body>
+
+</html>

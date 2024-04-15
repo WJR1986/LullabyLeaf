@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain Sound</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- No UI Slider-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.css"
+        integrity="sha512-MKxcSu/LDtbIYHBNAWUQwfB3iVoG9xeMCm32QV5hZ/9lFaQZJVaXfz9aFa0IZExWzCpm7OWvp9zq9gVip/nLMg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="dark-mode">
+    <div class="container mt-5">
+        <h1 class="text-center mt-5">Rain Sound</h1>
+        <!-- Theme switch button -->
+        <button id="themeSwitchBtn" class="btn btn-light position-fixed theme-switch-btn">
+            <i class="fas fa-moon"></i> Switch Theme
+        </button>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="text-center">
+                    <img id="rainIcon" class="img-fluid rounded-circle" src="/img/rain-light.jpg" alt="Rain Icon">
+                    <img id="additionalIcon" class="img-fluid rounded-circle" src="" alt="Additional Sound">
+                </div>
+                <div class="form-group mt-4 volume-control">
+                    <label for="volumeRange">Volume:</label>
+                    <!-- <input type="range" class="form-control-range" id="volumeRange" value="50"> -->
+                    <div id="volumeSlider"></div>
+                </div>
+                <audio id="rainAudio" preload="auto">
+                    <source src="rain.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="text-center mt-4">
+                    <button id="playBtn" class="btn play-button mr-2">Play</button>
+                    <button id="pauseBtn" class="btn pause-button">Pause</button>
+                </div>
+                <div class="timer-container mt-4">
+                    <div id="timerDisplay" class="progress-circle-value">01:00</div>
+                </div>
+
+
+
+
+                <div class="form-group duration mt-4">
+                    <label for="durationSelect">Select Duration:</label>
+                    <select id="durationSelect" class="form-control">
+                        <option value="60">1 minute</option>
+                        <option value="120">2 minutes</option>
+                        <option value="300">5 minutes</option>
+                        <option value="600">10 minutes</option>
+                        <option value="1200">20 minutes</option>
+                        <option value="1800">30 minutes</option>
+                        <option value="2400">40 minutes</option>
+                        <option value="3600">1 hour</option>
+                        <!-- Add more duration options as needed -->
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Additional Sounds -->
+        <div id="additionalSounds" class="text-center mt-5">
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-6">
+                    <h2 class="text-center">Additional Sounds</h2>
+                    <!-- Custom styling for the row -->
+                    <div class="custom-row-wrapper">
+                        <div class="row justify-content-center p-2">
+                            <div class="col-6 col-sm-3 text-center">
+                                <button class="btn additional-button btn-sound" data-sound="tent" title="Tent">
+                                    <i class="fas fa-campground"></i> <!-- Font Awesome icon for tent -->
+                                </button>
+                                <input type="range" class="form-control-range additional-volume" data-sound="tent"
+                                    value="50" style="display: none;">
+                            </div>
+                            <div class="col-6 col-sm-3 text-center">
+                                <button class="btn additional-button btn-sound" data-sound="fire" title="Fire">
+                                    <i class="fas fa-fire"></i> <!-- Font Awesome icon for fire -->
+                                </button>
+                                <input type="range" class="form-control-range additional-volume" data-sound="fire"
+                                    value="50" style="display: none;">
+                            </div>
+                            <div class="col-6 col-sm-3 text-center">
+                                <button class="btn additional-button btn-sound" data-sound="ocean" title="Ocean">
+                                    <i class="fas fa-water"></i> <!-- Font Awesome icon for ocean -->
+                                </button>
+                                <input type="range" class="form-control-range additional-volume" data-sound="ocean"
+                                    value="50" style="display: none;">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"
+        integrity="sha512-UOJe4paV6hYWBnS0c9GnIRH8PLm2nFK22uhfAvsTIqd3uwnWsVri1OPn5fJYdLtGY3wB11LGHJ4yPU1WFJeBYQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="darkmode.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

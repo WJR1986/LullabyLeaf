@@ -1,0 +1,161 @@
+/* style.css */
+
+/* ******************* */
+/* Timer Section */
+/* ******************* */
+
+.timer-container {
+  width: 100px; /* Set the width of the timer container */
+  height: 50px; /* Set the height of the timer container */
+  border: 3px solid #176b87; /* Set border color and thickness */
+  border-radius: 10px; /* Optional: Adjust border radius as needed */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Adjust font size of timer display */
+.timer-container #timerDisplay {
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+/* ******************* */
+/* Duration Section */
+/* ******************* */
+
+.duration {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Styling for the duration select */
+.duration #durationSelect {
+  background-color: #333; /* Light gray background color */
+  color: #d3d3d3; /* Font color */
+}
+
+/* Styling for the active option in the dropdown menu */
+.duration #durationSelect option:hover,
+.duration #durationSelect option:focus {
+  background-color: #ccc !important; /* Lighter gray background color on hover/focus */
+  color: #000 !important; /* Font color on hover/focus */
+}
+
+/* ******************* */
+/* Volume */
+/* ******************* */
+.volume-control {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Play Button */
+.play-button {
+  background-color: #176b87;
+  color: #dafffb;
+}
+
+/* Pause Button */
+.pause-button {
+  background-color: #dafffb;
+  color: #176b87;
+}
+
+/* ******************* */
+/* Theme Styles */
+/* ******************* */
+
+/* Theme Switch Button Styles */
+.theme-switch-btn {
+  top: 20px; /* Adjust top position */
+  right: 20px; /* Adjust right position */
+  background-color: #176b87;
+  color: #dafffb;
+}
+
+.theme-switch-btn:hover {
+  background-color: #dafffb;
+  color: #176b87;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #04364a; /* Set dark background color */
+  color: #dafffb; /* Set light text color */
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: #dafffb; /* Set light background color */
+  color: #333333; /* Set dark text color */
+}
+
+/* Home Button */
+.home-btn {
+  top: 20px; /* Adjust top position */
+  right: 70px; /* Adjust right position */
+  background-color: #176b87;
+  color: #dafffb;
+}
+
+.home-btn:hover {
+  background-color: #dafffb;
+  color: #176b87;
+}
+
+/* ******************* */
+/* Images */
+/* ******************* */
+
+/* Adjust dimensions to ensure uniformity */
+.img-fluid {
+  width: 100px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+}
+
+/* Rounded corners for images */
+.rounded-circle {
+  border-radius: 50%; /* Ensure images are circular */
+}
+
+/* ******************* */
+/* Additional Section */
+/* ******************* */
+
+/* Icon Btn */
+.additional-button {
+  background-color: #176b87;
+  color: #dafffb;
+}
+
+.custom-row-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Icon Styles */
+#additionalIcon {
+  display: none; /* Hide the additional image by default */
+}
+
+/* Hide additional volume controls */
+.additional-volume.hide {
+  display: none;
+}
+
+.additional-volume {
+  display: none;
+}
+
+/* Adjust dimensions to ensure uniformity for sound icons */
+.sound-icons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual sound icon styling */
+.sound-icon {
+  margin-right: 10px; /* Adjust spacing between sound icons */
+}
