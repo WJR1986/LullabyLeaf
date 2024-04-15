@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     // Set the source of the sound icon based on the sound parameter
     const soundIcon = document.getElementById('soundIcon');
-    soundIcon.src = '/img/' + sound + '-light.jpg';
+    soundIcon.src = sound + '-light.jpg';
     
     // Update the heading with the selected sound
     updateHeading(sound);
